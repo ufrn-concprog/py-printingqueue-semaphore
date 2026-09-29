@@ -41,13 +41,13 @@ python3 main.py
 
 The program reports each job as it is sent to the printer and when printing completes. After all threads have joined, it prints `All printing jobs are finished`. The interleaving and order of job messages may differ between runs.
 
-### 📚 Generate documentation
+## 📚 Generate documentation
 
 The Python modules include docstrings for documentation tools such as [pdoc](https://pdoc.dev). Install pdoc and generate HTML documentation from the project root with:
 
 ```bash
 python3 -m pip install pdoc
-pdoc job printingqueue main
+python3 -m pdoc -o doc main src.job src.printingqueue
 ```
 
 ## 🤝 Contributing
